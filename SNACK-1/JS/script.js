@@ -15,7 +15,7 @@ console.log(invitati)
 let i = 0
 const invitatiObj = invitati.map((prodotto)=> {
     i++;
-    return {tableName: "Tavolo Vip", name: prodotto, place: i};
+    return {tableName: "Tavolo Vip", guestName: prodotto, place: i};
 })
 console.log(invitatiObj);
 
