@@ -11,11 +11,13 @@ const invitati = [
     'Amadeus', 
     'Fiorello'
 ]
-console.log(invitati)
 let i = 0
 const invitatiObj = invitati.map((prodotto)=> {
     i++;
     return {tableName: "Tavolo Vip", guestName: prodotto, place: i};
 })
-console.log(invitatiObj);
+for(let i = 0; i < invitatiObj.length; i++){
+    const invite = invitatiObj[i] 
+    console.log(`${invite.tableName}, ${invite.guestName}, ${invite.place}`)
+};
 
