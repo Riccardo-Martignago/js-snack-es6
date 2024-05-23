@@ -36,9 +36,18 @@ const studenti = [
     }
 ];
 
-const upperCaseNames = studenti.map(student => ({
+const upperCaseNames = studenti.map((student) => ({
     Id: student.Id,
     Name: student.Name.toUpperCase(),
     Grades: student.Grades
 }));
+
 console.log(upperCaseNames);
+
+const studentPlus = studenti.filter((student) => student.Grades > 70);
+
+console.log(studentPlus);
+
+const studentSuper = studenti.filter((student) => student.Grades > 70 && student.Id > 120);
+
+console.log(studentSuper);
